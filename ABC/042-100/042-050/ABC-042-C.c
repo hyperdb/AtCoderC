@@ -3,11 +3,12 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 /**
  *
  */
-int check_num(int n, int *a, int k)
+bool check_num(int n, int *a, int k)
 {
     int m = 0;
 
@@ -18,12 +19,12 @@ int check_num(int n, int *a, int k)
         {
             if (m == a[i])
             {
-                return 0;
+                return false;
             }
         }
         n = n / 10;
     }
-    return 1;
+    return true;
 }
 
 /**
@@ -43,7 +44,7 @@ int main()
 
     while (n <= 100000)
     {
-        if (check_num(n, d, k) == 1)
+        if (check_num(n, d, k) == true)
         {
             printf("%d\n", n);
             break;
