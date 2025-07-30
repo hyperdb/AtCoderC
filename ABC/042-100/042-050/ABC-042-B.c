@@ -16,6 +16,7 @@ void swap(char **a, char **b)
     *a = *b;
     *b = t;
 }
+
 /**
  *
  */
@@ -33,6 +34,7 @@ void sort(char **s, int n)
         }
     }
 }
+
 /**
  *
  */

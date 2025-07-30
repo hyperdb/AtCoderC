@@ -3,6 +3,7 @@
  */
 #include <stdio.h>
 #include <stdbool.h>
+
 /**
  *
  */
@@ -14,6 +15,7 @@ void swap(int *a, int *b)
     *a = *b;
     *b = t;
 }
+
 /**
  *
  */
@@ -30,6 +32,7 @@ void sort(int a[], int n)
         }
     }
 }
+
 /**
  *
  */
