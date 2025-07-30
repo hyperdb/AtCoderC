@@ -1,10 +1,10 @@
 /**
- * 
+ * ABC-042-A
  */
 #include <stdio.h>
 #include <stdbool.h>
 /**
- * 
+ *
  */
 void swap(int *a, int *b)
 {
@@ -15,15 +15,15 @@ void swap(int *a, int *b)
     *b = t;
 }
 /**
- * 
+ *
  */
 void sort(int a[], int n)
 {
-    for(int i = 0; i < (n - 1); i++)
+    for (int i = 0; i < (n - 1); i++)
     {
-        for(int j = i + 1; j < n; j++)
+        for (int j = i + 1; j < n; j++)
         {
-            if(a[i] > a[j])
+            if (a[i] > a[j])
             {
                 swap(&a[i], &a[j]);
             }
@@ -31,7 +31,7 @@ void sort(int a[], int n)
     }
 }
 /**
- * 
+ *
  */
 int sum(int a[], int n)
 {
@@ -51,22 +51,22 @@ int main()
     int a[3];
     bool r = false;
 
-    for(int i = 0; i < 3; i++)
+    for (int i = 0; i < 3; i++)
     {
         scanf("%d", &a[i]);
     }
 
-    if(sum(a, 3) == 17)
+    if (sum(a, 3) == 17)
     {
         sort(a, 3);
 
-        if(a[0] == 5 && a[1] == 5)
+        if (a[0] == 5 && a[1] == 5)
         {
             r = true;
         }
     }
 
-    printf(r ? "YES": "NO");
+    printf(r ? "YES" : "NO");
 
     return 0;
 }
